@@ -13,7 +13,7 @@ import { Coordinator2 } from '../services/coordinator2';
 
 // Вариант 2. Публикатор (в данном случае, список людей) инициирует изменение, 
 // передавая измененное состояние в сервис Coordinator2. 
-// В этом сервисе реализован Observable Subject (см. файл services\coordinator2.ts).
+// В этом сервисе реализован Observable Subject - см. файл services\coordinator2.ts
 // Подписчик (в данном случае, компонента отдельной персоны) 
 // подписан на этот subject - см. файл single-person.component.ts
 
