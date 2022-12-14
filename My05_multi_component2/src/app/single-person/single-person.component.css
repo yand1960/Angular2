@@ -1,0 +1,19 @@
+.person-info, .person-photo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.person-info span {
+    display: block;
+    width: 150px;
+}
+
+/* .person {
+    margin-left: 50px;
+} */
+
+.warning {
+    color: crimson;
+    font-style: italic;
+}
+

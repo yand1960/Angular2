@@ -1,0 +1,16 @@
+div.person-info {
+    width: 200px;
+    display: inline-block;
+}
+
+div.person-info span {
+    display: block;
+}
+
+div.person-photo {
+    display: inline-block;
+}
+
+div.person-photo {
+    height: 100px;
+}

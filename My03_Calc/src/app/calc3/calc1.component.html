@@ -1,0 +1,12 @@
+<div id="calc1">
+    <h1>Калькулятор 3</h1>
+    <input [(ngModel)]="x" />
+    <input [(ngModel)]="y" />
+    <div>
+        <button (click)="plus();" 
+                [ngClass]="{'pressed': operation == 2}">+</button>
+        <button (click)="minus();" 
+                [ngClass]="{'pressed': operation == 3}">-</button>
+    </div>
+    <input value="{{result}}"/>
+</div>

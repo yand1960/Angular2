@@ -1,0 +1,15 @@
+#calc1 input {
+   display: block; 
+   margin-bottom: 6px;
+   width: 150px;
+   text-align: center;
+}
+
+#calc1 div button {
+    width: 75px;
+    margin-bottom: 6px;
+}
+
+.pressed {
+    background-color: pink;
+}

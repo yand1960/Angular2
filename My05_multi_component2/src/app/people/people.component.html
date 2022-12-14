@@ -1,0 +1,12 @@
+<h1>Люди</h1>
+<table border="1">
+<tr *ngFor="let p of people">
+    <td>{{p.id}}</td>
+    <td>{{p.lastName}}</td>
+    <td>{{p.firstName}}</td>
+    <td>{{p.salary}}</td>
+    <td>
+        <a routerLink="/person/{{p.id}}">Детали</a>
+    </td>
+</tr>
+</table>

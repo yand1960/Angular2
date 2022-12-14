@@ -1,0 +1,14 @@
+ <div class="person">
+    <div class="person-info">
+            <span>ID: {{person?.id}}</span>
+            <span>Фамилия:{{person?.lastName}}</span>
+            <span>Имя: {{person?.firstName}}</span>
+            <span>Зарплата: {{person?.salary}}</span>
+            <span class="warning" *ngIf="person!!.salary > 200000">
+                Выгодная партия!
+            </span>
+    </div>
+    <div class="person-photo">
+        <img src="assets/images/people/{{person?.photo}}"/>
+    </div>
+</div>

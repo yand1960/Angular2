@@ -1,0 +1,12 @@
+<div id="calc1">
+    <h1>Калькулятор</h1>
+    <input #num1/>
+    <input #num2/>
+    <div>
+        <button (click)="plus(num1.value, num2.value);" 
+                    class="{{plus_css_class}}">+</button>
+        <button (click)="minus(num1.value, num2.value);" 
+                    class="{{minus_css_class}}">-</button>
+    </div>
+    <input value="{{result}}"/>
+</div>

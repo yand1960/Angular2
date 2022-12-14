@@ -1,0 +1,18 @@
+div.person-info {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.person-info span {
+    display: block;
+}
+
+div.person-photo {
+    display: inline-block;
+}
+
+div.person-photo img {
+    width: 150px;
+    border-radius: 50%;
+}

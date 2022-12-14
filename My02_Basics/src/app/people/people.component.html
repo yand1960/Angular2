@@ -1,0 +1,11 @@
+<h1>Employee list</h1>
+<div *ngFor="let p of people" class="people">
+    <div class="person-info">
+        <span>id: {{p.id}}</span>
+        <span>Фамилия: {{p.lastName}}</span>
+        <span>Имя: {{p.firstName}}</span>
+    </div>
+    <div class="person-photo">
+        <img src="assets/images/people/{{p.photo}}" />
+    </div>
+</div>

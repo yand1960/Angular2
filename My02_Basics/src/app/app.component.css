@@ -1,0 +1,9 @@
+.nav-bar {
+    border: thin solid black;
+    background-color: rgb(206, 204, 204);
+
+}
+
+.nav-bar a {
+    padding-right: 20px;
+}
