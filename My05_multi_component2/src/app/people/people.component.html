@@ -9,6 +9,8 @@
         <a routerLink="/person/{{p.id}}">Детали</a>
         <!-- или так-->
         <a [routerLink]="'/person/' + p.id.toString()">Детали</a>
+        <!-- или так-->
+        <a href="/person/{{p.id}}">Детали</a>
     </td>
 </tr>
 </table>
