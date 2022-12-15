@@ -1,6 +1,8 @@
 import { Injectable } from "@angular/core";
 import { Subject} from 'rxjs';
 
+// Не очень удачная попытка сымитировать собственную задержку
+
 @Injectable({providedIn: 'root'})
 export class RateService{
     private url = "http://www.cbr-xml-daily.ru/daily_json.js";
