@@ -1,0 +1,7 @@
+<div (click)="toggle()" class="toggle-selector">
+    <span>{{isCollapsed ? 'Показать' : 'Спрятать'}}</span>
+</div>
+
+<div *ngIf="!isCollapsed">
+    <ng-content></ng-content>
+</div>

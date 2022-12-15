@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PeopleComponent } from './people/people.component';
 import { SinglePersonComponent } from './single-person/single-person.component';
+import { CollapsibleComponent } from './collapsible/collapsible.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeopleComponent,
-    SinglePersonComponent
+    SinglePersonComponent,
+    CollapsibleComponent
   ],
   imports: [
     BrowserModule,

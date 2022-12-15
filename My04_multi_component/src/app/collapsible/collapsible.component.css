@@ -1,0 +1,7 @@
+.toggle-selector {
+    font-size: 0.8em;
+    color: blue;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+}
