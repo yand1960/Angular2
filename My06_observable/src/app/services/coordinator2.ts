@@ -1,7 +1,7 @@
 import {Subject} from 'rxjs';
 
 export class Coordinator2 {
-
+   
     static idChanged = new Subject<number>();
     static idChanged$ = this.idChanged.asObservable();
     

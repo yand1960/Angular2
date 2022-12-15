@@ -2,12 +2,12 @@ export class Person {
     id: number;
     firstName: string;
     lastName: string;
-    salary: Number;
+    salary: number;
     photo: string;
     constructor(id: number,
         firstName: string,
         lastName: string,
-        salary: Number,
+        salary: number,
         photo: string){
             this.id = id;
             this.firstName = firstName;
@@ -26,7 +26,7 @@ export class Repository{
         ];
     }
    
-    public getById(id: Number): Person {
+    public getById(id: number ): Person {
         let people = this.getAll();
         let person = people.find(p => p.id==id) as Person;
         return person;

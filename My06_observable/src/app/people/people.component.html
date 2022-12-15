@@ -1,6 +1,6 @@
 <h1>Люди</h1>
 <table border="1">
-<tr *ngFor="let p of people">
+<tr *ngFor="let p of people" [ngClass]="{'selected': p.id == currentPersonId}">
     <td>{{p.id}}</td>
     <td>{{p.lastName}}</td>
     <td>{{p.firstName}}</td>

@@ -1,5 +1,7 @@
 <h1>Люди</h1>
 <div *ngFor="let p of people">
     <span>{{p.lastName}}, {{p.firstName}}</span>
-    <app-single-person [person]="p"></app-single-person>
+    <collapsible>
+        <app-single-person [person]="p"></app-single-person>
+    </collapsible>
 </div>

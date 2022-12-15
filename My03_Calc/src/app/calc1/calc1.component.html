@@ -1,5 +1,5 @@
 <div id="calc1">
-    <h1>Калькулятор</h1>
+    <h1>Калькулятор 1</h1>
     <input #num1/>
     <input #num2/>
     <div>
@@ -9,6 +9,7 @@
                 [ngClass]="{'pressed': operation == 3}">-</button>
     </div>
     <input value="{{result}}"/>
-    <!-- или (почти) равнозначно так  -->
+    <!-- или так  -->
     <input [value]="result"/>
+
 </div>

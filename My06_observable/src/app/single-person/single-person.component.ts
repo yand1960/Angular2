@@ -11,7 +11,7 @@ import { Person, Repository } from '../services/repository';
 })
 export class SinglePersonComponent {
 
-  person: Person; 
+  person?: Person; 
 
   // Конструктор, релизующий непрерывный опрос сервиса
   // constructor(repository: Repository) {
@@ -30,7 +30,7 @@ export class SinglePersonComponent {
   constructor(repository: Repository) {
   
     //this.person = repository.getAll()[id - 1];
-    this.person = repository.getById(1);
+    //this.person = repository.getById(1);
 
     Coordinator2.idChanged$.subscribe(id => {
       this.person = repository.getById(id);

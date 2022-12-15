@@ -6,6 +6,9 @@ import {Person, Repository} from '../services/repository'
 // См. шаблон, перадть данные дочернему элементу
 // Дочерняя компонента - см singe-person
 
+// Дополнительно, реализована компента collapsible, 
+// позволяющая прятать/показывать любой фрагмент на странице (см. ее)
+
 @Component({
   selector: 'app-people',
   templateUrl: './people.component.html',

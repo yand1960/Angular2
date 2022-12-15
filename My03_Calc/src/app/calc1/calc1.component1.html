@@ -1,5 +1,5 @@
 <div id="calc1">
-    <h1>Калькулятор</h1>
+    <h1>Калькулятор 1</h1>
     <input #num1/>
     <input #num2/>
     <div>
@@ -9,4 +9,6 @@
                     class="{{minus_css_class}}">-</button>
     </div>
     <input value="{{result}}"/>
+    <!-- или так  -->
+    <input [value]="result" />
 </div>

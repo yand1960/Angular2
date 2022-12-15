@@ -24,6 +24,7 @@ import { Coordinator2 } from '../services/coordinator2';
 })
 export class PeopleComponent {
   people: Array<Person>;
+  currentPersonId: number = 0;
 
   constructor(repository: Repository) {
     this.people = repository.getAll();
@@ -32,7 +33,10 @@ export class PeopleComponent {
   setCurrentPersonId(id: number) {
     //Coordinator1.currentPersonId = id;
     Coordinator2.setCurrentPersonId(id);
+    this.currentPersonId = id;
   }
+
+
 }
 
 // ЗАДАЧИ.

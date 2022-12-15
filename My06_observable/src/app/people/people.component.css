@@ -14,3 +14,8 @@ div.person-photo {
 div.person-photo {
     height: 100px;
 }
+
+.selected {
+    background-color: black;
+    color: white;
+}
