@@ -2,6 +2,8 @@ import { Component, Input } from '@angular/core';
 import { Coordinator1 } from '../services/coordinator1';
 import { Coordinator2 } from '../services/coordinator2';
 import { Person, Repository } from '../services/repository';
+import ru from '@angular/common/locales/ru';
+import { registerLocaleData } from '@angular/common';
 
 
 @Component({
@@ -32,9 +34,12 @@ export class SinglePersonComponent {
     //this.person = repository.getAll()[id - 1];
     //this.person = repository.getById(1);
 
-    Coordinator2.idChanged$.subscribe(id => {
+    Coordinator2.idChanged.subscribe(id => {
       this.person = repository.getById(id);
     });
+
+    registerLocaleData(ru);
   }
+
 
 }

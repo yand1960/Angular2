@@ -24,6 +24,10 @@ export class Calc1Component {
   constructor(calc_service: CalcService) {
       this.calcService = calc_service;
       //this.result = this.calcService.plus(123, 456);
+    }
+
+  private dummy() {
+    console.log("dummy");
   }
 
   plus(x: string, y: string) {

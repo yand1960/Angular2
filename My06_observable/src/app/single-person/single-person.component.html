@@ -1,11 +1,11 @@
  <h1>Сведения о персоне</h1>
  <div class="person" *ngIf="person != null">
     <div class="person-info">
-            <span>ID: {{person?.id}}</span>
-            <span>Фамилия: {{person?.lastName}}</span>
-            <span>Имя: {{person?.firstName}}</span>
-            <span>Зарплата: {{person?.salary}}</span>
-            <span class="warning" *ngIf="person!!.salary > 200000">
+            <span>ID: {{person.id}}</span>
+            <span>Фамилия: {{person.lastName}}</span>
+            <span>Имя: {{person.firstName}}</span>
+            <span>Зарплата: {{person.salary | number:"":"ru"}}</span>
+            <span class="warning" *ngIf="person.salary > 200000">
                 Выгодная партия!
             </span>
     </div>

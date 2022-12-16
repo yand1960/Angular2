@@ -20,6 +20,7 @@ export class AppComponent {
   
   constructor(rateService: RateService, 
               weatherService: WeatherService) {
+                
     rateService.ready.subscribe( rates => {
       let result: any = rates;
       this.usdRate = result.Valute.USD.Value;

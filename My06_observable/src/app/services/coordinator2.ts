@@ -3,7 +3,6 @@ import {Subject} from 'rxjs';
 export class Coordinator2 {
    
     static idChanged = new Subject<number>();
-    static idChanged$ = this.idChanged.asObservable();
     
     static setCurrentPersonId(id: number) {
         // При вызове метода next проиcходит pushing 
