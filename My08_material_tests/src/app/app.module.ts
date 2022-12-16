@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatExpansionModule} from '@angular/material/expansion'
-
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule} from '@angular/material/expansion';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    //MatExpansionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, // без него не работает аккордеон
+    MatExpansionModule // аккордеон в нем
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() {}
+}

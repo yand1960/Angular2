@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule	"^time$"	"index.html"
+RewriteRule	"^people$"	"index.html"
+	
